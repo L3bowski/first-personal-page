@@ -1,11 +1,6 @@
-const { express } = require('modena');
-var router = express.Router();
-var path = require('path');
-var pagesController = require('./controllers/pages-controller');
+const { configureEndpoints } = require('modena');
+const pagesController = require('./controllers/pages-controller');
 
-const configureRouter = (middleware) => {
+module.exports = configureEndpoints((router, config, middleware) => {
 	router.get('/', middleware.session, pagesController.resolve);
-	return router;
-}
-
-module.exports = { configureRouter };
+});
