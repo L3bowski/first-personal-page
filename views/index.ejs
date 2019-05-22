@@ -3,13 +3,13 @@
 	<title><%= title %></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="icon" type="image/png" href="<%= asset('favicon.png') %>">
+	<link rel="icon" type="image/png" href="/favicon.png?$modena=php-personal-page">
 
 	<link rel="stylesheet" href="/plugins/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="/plugins/font-awesome-4.4.0/css/font-awesome.css" type="text/css" />
-	<link href="<%= asset('css/generics.css') %>" rel="stylesheet" type="text/css" />
-	<link href="<%= asset('css/backgrounds.css') %>" rel="stylesheet" type="text/css" />
-	<link href="<%= asset('css/style.css') %>" rel="stylesheet" type="text/css" />
+	<link href="/css/generics.css?$modena=php-personal-page" rel="stylesheet" type="text/css" />
+	<link href="/css/backgrounds.css?$modena=php-personal-page" rel="stylesheet" type="text/css" />
+	<link href="/css/style.css?$modena=php-personal-page" rel="stylesheet" type="text/css" />
 
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 </head>
@@ -28,7 +28,7 @@
 						<span class="icon-bar black-bg"></span>
 						<span class="icon-bar black-bg"></span>
 						</button>
-						<a class="navbar-brand regular-text" href="/php-personal-page">Carles Capellas</a>
+						<a class="navbar-brand regular-text" href="/?$modena=php-personal-page">Carles Capellas</a>
 						<a class="icon-anchor pull-right visible-xs mail-icon" onclick="toggleContact();">
 						<i class="fa fa-2x fa-envelope"></i>
 						</a>
@@ -36,9 +36,9 @@
 					<div class="navbar-collapse collapse">
 						<nav>
 						<ul class="nav navbar-nav">          
-							<li><a class="regular-text" href="/php-personal-page?page=cv"><%= headerContent[0] %></a></li>
-							<li><a class="regular-text" href="/php-personal-page?page=projects"><%= headerContent[1] %></a></li>
-							<li><a class="regular-text" href="/php-personal-page?page=not-ready"><%= headerContent[2] %></a></li>
+							<li><a class="regular-text" href="/?page=cv&$modena=php-personal-page"><%= headerContent[0] %></a></li>
+							<li><a class="regular-text" href="/?page=projects&$modena=php-personal-page"><%= headerContent[1] %></a></li>
+							<li><a class="regular-text" href="/?page=not-ready&$modena=php-personal-page"><%= headerContent[2] %></a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
@@ -48,20 +48,20 @@
 							</a>
 							<ul class="dropdown-menu" role="menu">
 								<a class="regular-text language-icon"
-									href="/php-personal-page?page=<%= rawPage%>&language=ca">
-									<img src="images/footer/catalan.png" width="25" height="25"
+									href="/?page=<%= rawPage%>&language=ca&$modena=php-personal-page">
+									<img src="/images/footer/catalan.png?$modena=php-personal-page" width="25" height="25"
 										class="<%= language == 'ca' ? '' : 'transparent' %>">
 										<%= headerContent[4] %>
 								</a>
 								<a class="regular-text language-icon"
-									href="/php-personal-page?page=<%= rawPage%>&language=es">
-									<img src="images/footer/spanish.png" width="25" height="25"
+									href="/?page=<%= rawPage%>&language=es&$modena=php-personal-page">
+									<img src="/images/footer/spanish.png?$modena=php-personal-page" width="25" height="25"
 										class="<%= language == 'es' ? '' : 'transparent' %>">
 										<%= headerContent[5] %>
 								</a>
 								<a class="regular-text language-icon"
-									href="/php-personal-page?page=<%= rawPage%>&language=en">
-									<img src="images/footer/english.png" width="25" height="25"
+									href="/?page=<%= rawPage%>&language=en&$modena=php-personal-page">
+									<img src="/images/footer/english.png?$modena=php-personal-page" width="25" height="25"
 										class="<%= language == 'en' ? '' : 'transparent' %>">
 										<%= headerContent[6] %>
 								</a>
@@ -74,13 +74,13 @@
 							</li>
 							<li class="hidden-xs hidden-sm icon-block">
 							<a href="http://www.facebook.com/carles.capellas" target="_blank">
-								<img src="images/footer/footer-facebook.png" align="absmiddle" width="30" height="30">
+								<img src="/images/footer/footer-facebook.png?$modena=php-personal-page" align="absmiddle" width="30" height="30">
 							</a>
 							<a href="https://twitter.com/carlescapellas" target="_blank">
-								<img src="images/footer/footer-twitter.png" align="absmiddle" width="30" height="30">
+								<img src="/images/footer/footer-twitter.png?$modena=php-personal-page" align="absmiddle" width="30" height="30">
 							</a>
 							<a href="https://es.linkedin.com/pub/carles-capellas-careta/38/80/9b2" target="_blank">
-								<img src="images/footer/footer-linkedin.png" align="absmiddle" width="30" height="30">
+								<img src="/images/footer/footer-linkedin.png?$modena=php-personal-page" align="absmiddle" width="30" height="30">
 							</a>
 							</li>
 						</ul>
@@ -126,34 +126,34 @@
 			<div class="row p-top-15">
 				<div class="col-sm-6 col-xs-12 left-sm">
 					<%= footerContent[0] %>
-					<a href="/php-personal-page?page=<%= rawPage%>&language=ca">
-						<img src="images/footer/catalan.png" width="30" height="30"
+					<a href="/?page=<%= rawPage%>&language=ca&$modena=php-personal-page">
+						<img src="/images/footer/catalan.png?$modena=php-personal-page" width="30" height="30"
 							class="<%= language == 'ca' ? '' : 'transparent' %>">
 					</a>
 					|
-					<a href="/php-personal-page?page=<%= rawPage%>&language=es">
-						<img src="images/footer/spanish.png" width="30" height="30"
+					<a href="/?page=<%= rawPage%>&language=es&$modena=php-personal-page">
+						<img src="/images/footer/spanish.png?$modena=php-personal-page" width="30" height="30"
 							class="<%= language == 'es' ? '' : 'transparent' %>">
 					</a>
 					|
-					<a href="/php-personal-page?page=<%= rawPage%>&language=en">
-						<img src="images/footer/english.png" width="30" height="30"
+					<a href="/?page=<%= rawPage%>&language=en&$modena=php-personal-page">
+						<img src="/images/footer/english.png?$modena=php-personal-page" width="30" height="30"
 							class="<%= language == 'en' ? '' : 'transparent' %>">
 					</a>
 				</div>
 				<div class="col-sm-6 col-xs-12 right-sm m-bottom-15">  
 					capellas.carles@gmail.com&emsp;
 					<a href="http://www.facebook.com/carles.capellas" target="_blank">
-						<img src="images/footer/footer-facebook.png" align="absmiddle" width="30" height="30">
+						<img src="/images/footer/footer-facebook.png?$modena=php-personal-page" align="absmiddle" width="30" height="30">
 					</a>
 					<a href="https://twitter.com/carlescapellas" target="_blank">
-						<img src="images/footer/footer-twitter.png" align="absmiddle" width="30" height="30">
+						<img src="/images/footer/footer-twitter.png?$modena=php-personal-page" align="absmiddle" width="30" height="30">
 					</a>
 					<a href="https://es.linkedin.com/pub/carles-capellas-careta/38/80/9b2" target="_blank">
-						<img src="images/footer/footer-linkedin.png" align="absmiddle" width="30" height="30">
+						<img src="/images/footer/footer-linkedin.png?$modena=php-personal-page" align="absmiddle" width="30" height="30">
 					</a> 
 					<!-- <a href="https://plus.google.com/106240492725911247715" target="_blank">
-						<img src="images/footer/footer-google.png" align="absmiddle" width="30" height="30">
+						<img src="/images/footer/footer-google.png?$modena=php-personal-page" align="absmiddle" width="30" height="30">
 					</a> -->                  
 				</div>
 			</div>
@@ -162,7 +162,7 @@
 
 	<script type="text/javascript" src="/plugins/jquery-2.1.1/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="/plugins/bootstrap-3.2.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<%= asset('js/footer-pusher.js') %>"></script>
-	<script type="text/javascript" src="<%= asset('js/init.js') %>"></script>
+	<script type="text/javascript" src="/js/footer-pusher.js?$modena=php-personal-page"></script>
+	<script type="text/javascript" src="/js/init.js?$modena=php-personal-page"></script>
 </body>
 </html>

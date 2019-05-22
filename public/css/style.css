@@ -5,7 +5,7 @@
 
 .body-bg {
 	/*background-color: #d1e1ec;*/
-	background-image: url('../images/bgs/mainbg.jpg');
+	background-image: url('/images/bgs/mainbg.jpg?$modena=php-personal-page');
 }
 
 .main-button {
